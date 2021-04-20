@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BetterWorks Demo Test" thread-count="5"  parallel="tests" verbose="3">
+
+   <listeners>
+        <listener class-name="testlisteners.ExtentReportListener"/>
+    </listeners>
+    <test name="Login Flow">
+       <classes>
+            <class name="tests.LoginPageTest"/>
+
+        </classes>
+    </test>
+    <test name="Create Poll Test">
+        <classes>
+            <class name="tests.CreatePollTest"/>
+
+        </classes>
+    </test>
+    <!-- Test -->
+</suite> <!-- Suite -->
